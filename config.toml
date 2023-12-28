@@ -1,3 +1,41 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://robottmixing.eu/"
+defaultContentLanguage = "en"
+languageCode = "en"
+
+title = "Robott Mixing"
+
+theme = "gokarna"
+
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+[menu]
+ [params]
+  description = "Push button, pluck string, shout word, make song."
+  avatarURL = "/images/avatar.webp"
+  AvatarAltText = "Robott Mixing"
+  avatarSize = "size-l"
+  socialIcons = [
+        {name = "instagram", url = "https://www.instagram.com/robott.music"},
+        {name = "youtube", url = "https://www.youtube.com/channel/UCpZusdGVn8CC7j0Hh6ekq9w"},
+        {name = "spotify", url = "https://open.spotify.com/artist/7HN2tAEDlDWgvPj3Q6hsVx?si=q3sEgZnIQ1qhC1zGiRMXFw"},
+  ]
+    
+  [[menu.main]]
+    identifier = "instagram"
+    pre = "<span data-feather='instagram'></span>"
+    url = "https://www.instagram.com/robott.music"
+    weight = 1
+    
+  [[menu.main]]
+    identifier = "youtube"
+    pre = "<span data-feather='youtube'></span>"
+    url = "https://www.youtube.com/channel/UCpZusdGVn8CC7j0Hh6ekq9w"
+    weight = 2
+    
+  [[menu.main]]
+    identifier = "spotify"
+    pre = "<img class='svg-inject' src='/svg/icons/spotify.svg'/>"
+    url = "https://open.spotify.com/artist/7HN2tAEDlDWgvPj3Q6hsVx?si=q3sEgZnIQ1qhC1zGiRMXFw"
+    weight = 3
+    
